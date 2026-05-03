@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Шаблон сайта</title>
+	<link rel="icon" href="img/favicon.svg"> 
+	<!-- Шрифты -->
+	<link rel="stylesheet" href="css/index.css">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="format-detection" content="date=no">
+	<meta name="format-detection" content="address=no">
+	<meta name="format-detection" content="email=no">
+	<meta name="description" content="">
+</head>
+<body>
+
+<!-- <svg width="20" height="20">
+	<use xlink:href="sprites.svg#home"></use>
+</svg> -->
+
+<div id="app">
+	<header class="header">
+		<div class="wrapper">
+			<div class="header__wrap">
+				<a href="index.html" class="header__logo">
+					<img src="img/logo.svg" alt="">
+				</a>
+
+				<nav class="headerMenu">
+					<a href="#" class="headerMenu__item"></a>
+				</nav>
+
+				<div class="header__right">
+					<div class="burger">
+						<img src="img/burger.svg" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section class="section">
+		<div class="wrapper">
+			<div class="sectionH">
+				<p class="h2 sectionH__ttl"></p>
+				<p class="sectionH__subt"></p>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="wrapper">
+			<div class="footer__wrap"></div>
+
+			<div class="footer__bottom">
+				<p></p>
+			</div>
+		</div>
+	</footer>
+
+
+
+
+	<section class="mobMenu">
+		<button type="button" class="mobMenu__close">
+			<svg width="24" height="24">
+				<use xlink:href="sprites.svg#close-icon"></use>
+			</svg>
+		</button>
+
+		<nav class="mobileMenu">
+			<a href="#" class="mobileMenu__item"></a>
+		</nav>
+	</section>
+
+
+
+
+	<div class="overlay"></div>
+
+	<form action="#" class="modal" id="orderModal">
+		<button type="button" class="modal__close">
+			<svg width="24" height="24">
+				<use xlink:href="sprites.svg#close-icon"></use>
+			</svg>
+		</button>
+
+		<div class="modal__head">
+			<p class="h3 modal__ttl"></p>
+			<p class="modal__subt"></p>
+		</div>
+
+		<div class="modal__inputs">
+			<div class="input modal__input">
+				<input type="text" name="name" placeholder="Ваше имя" required autocomplete="off" class="input__field">
+			</div>
+			<div class="input modal__input">
+				<input type="tel" name="phone" placeholder="Номер телефона" required autocomplete="off" class="input__field">
+			</div>
+		</div>
+
+		<p class="agreement modal__agreement"></p>
+		<button type="submit" class="btn modal__submit">Отправить</button>
+	</form>
+
+	<div class="modal" id="thanksModal">
+		<button type="button" class="modal__close">
+			<svg width="24" height="24">
+				<use xlink:href="sprites.svg#close-icon"></use>
+			</svg>
+		</button>
+
+		<div class="modal__head">
+			<p class="modal__ttl">Спасибо за обращение!</p>
+			<p class="modal__subt">Мы свяжемся с Вами в ближайшее время</p>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+<!-- JavaScript section -->
+
+<!-- <script src="https://api-maps.yandex.ru/2.1/?apikey=0dc60124-bce7-4b51-b285-537bc16beceb&lang=ru-RU" type="text/javascript"></script> -->
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.inputmask.min.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/custom.js"></script>
+
+</body>
+</html>

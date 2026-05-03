@@ -1,0 +1,122 @@
+@font-face {
+    font-family: 'KonstFont'; 
+    src: url('konstrukt/KONSTRUKT-Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'LuckyFont';
+    src: url('luckyFortune/Lucky-Fortune-Lined.otf')
+}
+
+html, body {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    height: 100%;
+    font-family: Arial;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+#app {
+    flex: 1;
+}
+
+#icon {
+    width: 90px;
+    border-radius: 300px;
+    margin-top: 24px;
+    margin-left: 5px;
+}
+
+img {
+  width: 300px;
+  border-radius: 20px;
+  margin-top: 1px;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul{
+    margin-top: 10px;
+}
+
+li {
+    color: #000000;
+    margin-bottom: 5px;
+}
+
+p {
+    margin-top: 10px;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.header {
+    background-color: #000;
+    margin-top: 20px;
+}
+
+.header__wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    height: 80px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__wrap input {
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: none;
+}
+
+.header__logo {
+    text-decoration: none;
+    color: #fff;
+}
+
+.text_title {
+    font-size: 42px;
+    font-family: 'KonstFont', sans-serif;
+    margin: 0; /* ВАЖНО */
+}
+
+#second_text {
+    color: #000000;
+    font-family: 'KonstFont', sans-serif;
+    font-size: 40px;
+}
+
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 40px 20px;
+    margin: 0;
+}
+
+.footer__title {
+    color: #ffffff;
+    font-family: 'KonstFont', sans-serif;
+    font-style: normal;
+    margin-top: -20px;
+}
+
+.ul_footer {
+    margin-top: -10px;
+    margin-left: -20px;
+}
