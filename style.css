@@ -58,8 +58,7 @@ p {
 .wrapper {
     max-width: 1200px;
     margin: 0 auto;
-    margin-top: 10px;
-    margin-bottom: 30px;
+    padding: 0 16px;
 }
 
 .header {
@@ -94,10 +93,6 @@ p {
     font-size: 42px;
     font-family: 'KonstFont', sans-serif;
     margin: 0; /* ВАЖНО */
-}
-
-main {
-    margin-left: 20px;
 }
 
 #second_text {
