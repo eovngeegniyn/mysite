@@ -96,6 +96,10 @@ p {
     margin: 0; /* ВАЖНО */
 }
 
+main {
+    margin-left: 20px;
+}
+
 #second_text {
     color: #000000;
     font-family: 'KonstFont', sans-serif;
