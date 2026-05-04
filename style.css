@@ -31,28 +31,8 @@ body {
     flex: 1;
 }
 
-.main__list {
-    color: #000000;
-    font-family: 'KonstFont', sans-serif;
-    font-size: 28px;
-}
-
-
-.main__link {
-    color: #000;
-    font-family: 'KonstFont', sans-serif;
-    font-size: 28px;
-
-    opacity: 0.7;
-    transition: opacity 0.2s ease;
-}
-
-.main__link:hover {
-    opacity: 1;
-}
-
 img {
-    max-width: 50%;
+    max-width: 100%;
     height: auto;
 
     border-radius: 20px;
@@ -65,11 +45,6 @@ a {
 
 ul{
     margin-top: 10px;
-}
-
-li {
-    color: #000000;
-    margin-bottom: 5px;
 }
 
 main a {
@@ -92,7 +67,6 @@ p {
 
 .header {
     background-color: #000;
-    margin-top: 14px;
 }
 
 .header__wrap {
@@ -106,6 +80,7 @@ p {
     padding: 8px 12px;
     border-radius: 6px;
     border: none;
+    outline: none;
 }
 
 .header__logo {
@@ -122,10 +97,30 @@ p {
     margin: 0; /* ВАЖНО */
 }
 
-.main__desccription {
+.main__description {
     color: #000000;
     font-family: 'KonstFont', sans-serif;
     font-size:32px;
+}
+
+.main__list li{
+    color: #000000;
+    font-family: 'KonstFont', sans-serif;
+    font-size: 28px;
+}
+
+
+.main__link {
+    color: #000;
+    font-family: 'KonstFont', sans-serif;
+    font-size: 28px;
+
+    opacity: 0.7;
+    transition: opacity 0.2s ease;
+}
+
+.main__link:hover {
+    opacity: 1;
 }
 
 .footer {
