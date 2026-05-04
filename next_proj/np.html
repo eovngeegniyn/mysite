@@ -17,7 +17,7 @@
     <body>
         <div id="app">
             <header class="header">
-                    <div class="header__wrap">
+                    <div class="container header__wrap">
 
                         <a href="../index.html" class="header__logo">
                             <h1 class="text_title">Onegin</h1>
@@ -30,18 +30,46 @@
              </header>           
 
              <main class="main">
-                <div class="wrapper">
+                <div class="container wrapper">
+
+                    <h2>Содержимое файла:</h2>
+                    <pre id="output">Загрузка...</pre>
                     
-                    <p>Zero pedik</p>
+                    <div id="output"></div>
+
+                    <script>
+                    fetch('main.php')
+                    .then(res => res.json())
+                    .then(data => {
+                        let html = '';
+
+                        data.forEach(match => {
+                        html += `
+                            <div style="margin-bottom:20px;">
+                            <b>${match[0]} vs ${match[1]}</b><br>
+                            Время: ${match[3]}<br>
+                            P1: ${match[4].P1} | X: ${match[4].X} | P2: ${match[4].P2}
+                            </div>
+                        `;
+                        });
+
+                        document.getElementById('output').innerHTML = html;
+                    })
+                    .catch(err => {
+                        document.getElementById('output').textContent = "Ошибка загрузки";
+                        console.error("Ошибка:", err);
+                    });
+                    </script>
 
                 </div>
              </main>
         </div>
 
         <footer class="footer">
-            <div class="wrapper">
-                <div class="footer__content">
-                    <h2 class="footer__title">My contacts</h2>
+            <div class="footer__wrap">
+                <div class="container footer__wrap">
+                    
+                    <h2 class="footer__content">My contacts</h2>
                     <ul class="footer__list">
                         <li><a href="mailto:eovngeegniyn@gmail.com" target="_blank">Gmail</a></li>
                         <li><a href="tg://resolve?domain=eovngeegniyn" target="_blank">Telegram</a></li>
