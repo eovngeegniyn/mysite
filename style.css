@@ -14,13 +14,14 @@ html, body {
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
     height: 100%;
-    font-family: Arial, sans-serif;
 }
 
 body {
     display: flex;
     flex-direction: column;
     margin: 0;
+    font-family: 'KonstFont', Arial, sans-serif;
+
 }
 
 * {
@@ -45,10 +46,6 @@ a {
 
 ul{
     margin-top: 10px;
-}
-
-main a {
-    color: #000;
 }
 
 .footer a {
@@ -87,25 +84,22 @@ p {
     text-decoration: none;
     color: #fff;
     font-family: 'KonstFont', sans-serif;
-    font-size: 28px;
+    font-size: 38px;
 
 }
 
 .text_title {
     font-size: 42px;
-    font-family: 'KonstFont', sans-serif;
     margin: 0; /* ВАЖНО */
 }
 
 .main__description {
     color: #000000;
-    font-family: 'KonstFont', sans-serif;
     font-size:32px;
 }
 
 .main__list li{
     color: #000000;
-    font-family: 'KonstFont', sans-serif;
     font-size: 28px;
 }
 
@@ -133,7 +127,7 @@ p {
     display: flex;
     flex-direction: column; 
     align-items: flex-start;
-    gap: 8px;
+    gap: 10px;
 }
 
 .footer__title {
