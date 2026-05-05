@@ -12,6 +12,7 @@
 
 @media (max-width: 600px) {
     .main__cta {
+        display: block;
         width: 100%;
         text-align: center;
     }
