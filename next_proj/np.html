@@ -15,22 +15,24 @@
     </head>
 
     <body>
-        <div id="app">
+       <div class="app">
             <header class="header">
-                    <div class="container header__wrap">
-
-                        <a href="../index.html" class="header__logo">
-                            <h1 class="text_title">Onegin</h1>
-                            <!--<img id="icon" src="img/atyan2.svg" alt="лого-домой">  -->
-                        </a>
-                        
-                        <input type="text" placeholder="Поиск">
-
+                    <div class="container">
+                        <div class="header__wrap">
+                            <h1 class="header__title">
+                                <a href="../index.html" class="header__logo">Onegin</a>
+                            </h1>
+                            
+                            <form class="header__search">
+                                <input type="text" placeholder="Поиск" aria-label="Поиск">
+                            </form>
+                    
+                        </div>
                     </div>
              </header>           
 
              <main class="main">
-                <div class="container wrapper">
+                <div class="container">
 
                     <h2>Содержимое файла:</h2>
                     <pre id="output">Загрузка...</pre>
@@ -65,17 +67,18 @@
              </main>
         </div>
 
-        <footer class="footer">
-            <div class="footer__wrap">
-                <div class="container footer__wrap">
-                    
-                    <h2 class="footer__content">My contacts</h2>
-                    <ul class="footer__list">
-                        <li><a href="mailto:eovngeegniyn@gmail.com" target="_blank">Gmail</a></li>
-                        <li><a href="tg://resolve?domain=eovngeegniyn" target="_blank">Telegram</a></li>
-                        <li><a href="https://vk.com/eovngeegniyn" target="_blank">VK</a></li>
-                    </ul>
-                   
+         <footer class="footer">
+            <div class="container">
+                <div class="footer__wrap">
+                    <div class="footer__content">
+                        <h2 class="footer__title">My contacts</h2>
+
+                        <ul class="footer__list">
+                            <li><a href="mailto:eovngeegniyn@gmail.com" target="_blank" rel="noopener noreferrer">Gmail</a></li>
+                            <li><a href="tg://resolve?domain=eovngeegniyn" target="_blank" rel="noopener noreferrer">Telegram</a></li>
+                            <li><a href="https://vk.com/eovngeegniyn" target="_blank" rel="noopener noreferrer">VK</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </footer>

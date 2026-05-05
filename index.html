@@ -16,46 +16,50 @@
     <body>
         <div class="app">
             <header class="header">
-                    <div class="container header__wrap">
-
-                        <h1 class="text_title">
-                            <a href="index.html" class="header__logo">Onegin</a>
-                        </h1>
-                        
-                        <input type="text" placeholder="Поиск">
-
+                    <div class="container">
+                        <div class="header__wrap">
+                            <h1 class="header__title">
+                                <a href="index.html" class="header__logo">Onegin</a>
+                            </h1>
+                            
+                            <form class="header__search">
+                                <input type="text" placeholder="Поиск" aria-label="Поиск">
+                            </form>
+                        </div>
                     </div>
              </header>           
 
              <main class="main">
                 <div class="container">
+                    <div class="main__image">
+                        <img src="img/win.jpg" alt="image for the background">
+                    </div>      
+
+                    <h2 class="main__title">Facts about me:</h2>
                     
-                    <img src="img/win.jpg" alt="для фона">                    
-                    <h2 class="main__description">Facts about me:</h2>
                     <ul class="main__list">
                         <li>I like to travel</li>
                         <li>Learning to program</li>
                         <li>I want to become a full-stack developer</li>
                     </ul>
                                 
-                    <a class="main__link" href="next_proj/np.html">My next project</a>
-                
+                    <a class="main__cta" href="next_proj/np.html">My next project</a>
                 </div>
              </main>
         </div>
 
         <footer class="footer">
-            <div class="container footer__wrap">
-                <div class="footer__content">
-                    
-                    <h2 class="footer__title">My contacts</h2>
+            <div class="container">
+                <div class="footer__wrap">
+                    <div class="footer__content">
+                        <h2 class="footer__title">My contacts</h2>
 
-                    <ul class="footer__list">
-                        <li><a href="mailto:eovngeegniyn@gmail.com" target="_blank">Gmail</a></li>
-                        <li><a href="tg://resolve?domain=eovngeegniyn" target="_blank">Telegram</a></li>
-                        <li><a href="https://vk.com/eovngeegniyn" target="_blank">VK</a></li>
-                    </ul>
-                   
+                        <ul class="footer__list">
+                            <li><a href="mailto:eovngeegniyn@gmail.com" target="_blank" rel="noopener noreferrer">Gmail</a></li>
+                            <li><a href="tg://resolve?domain=eovngeegniyn" target="_blank" rel="noopener noreferrer">Telegram</a></li>
+                            <li><a href="https://vk.com/eovngeegniyn" target="_blank" rel="noopener noreferrer">VK</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </footer>
