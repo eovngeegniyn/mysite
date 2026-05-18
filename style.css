@@ -20,7 +20,7 @@
 
 html, body {
     background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     height: 100%;
 }
 
@@ -37,6 +37,13 @@ body {
 }
 
 .app {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+}
+
+main {
     flex: 1;
 }
 
@@ -60,10 +67,6 @@ ul{
     color: #fff;
 }
 
-p {
-    margin-top: 10px;
-}
-
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -72,6 +75,7 @@ p {
 
 .header {
     background-color: #000;
+    color: #fff
 }
 
 .header__wrap {
@@ -93,17 +97,55 @@ p {
     color: #fff;
     font-family: 'KonstFont', sans-serif;
     font-size: 38px;
+}
 
+.header__menu-link {
+    font-family: 'KonstFont', sans-serif;
+    font-size: 24px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+    color: #fff;
+}
+
+.header__menu-wrap {
+    opacity: 0.7;
+    transition: opacity 0.2s ease;
+}
+
+.header__menu-wrap:hover {
+    opacity: 1;
+}
+
+.products__cta {
+    display: inline-block;
+    padding: 12px 20px;
+
+    background-color: #000;
+    color: #fff;
+
+    border-radius: 8px;
+    text-decoration: none;
+
+    font-weight: 500;
+    transition: 0.3s;
+
+    font-size: 24px;
+}
+
+.main {
+    padding-bottom: 8px;
+    background-image: url('img/starwars_bg.jpg');
 }
 
 .main__title {
-    color: #000000;
     font-size:32px;
 }
 
-.main__list li{
-    color: #000000;
-    font-size: 28px;
+.main_item{
+    font-size: 24px;
 }
 
 
@@ -120,7 +162,7 @@ p {
     font-weight: 500;
     transition: 0.3s;
 
-    font-size: 20px;
+    font-size: 24px;
 }
 
 .main__cta:hover {
@@ -141,7 +183,6 @@ p {
 .footer {
     background-color: #000;
     color: #fff;
-    margin-top: 8px;
 }
 
 .footer__content {
@@ -154,7 +195,7 @@ p {
 .footer__title {
     font-family: 'KonstFont', sans-serif;
     font-style: normal;
-    font-size: 28px;
+    font-size: 24px;
     margin: 0;
     padding: 8px 0 0 0;
 }
