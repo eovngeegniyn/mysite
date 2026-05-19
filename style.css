@@ -4,14 +4,8 @@
     font-display: swap;
 }
 
-@font-face {
-    font-family: 'LuckyFont';
-    src: url('luckyFortune/Lucky-Fortune-Lined.otf');
-    font-display: swap;
-}
-
 @media (max-width: 600px) {
-    .main__cta {
+    .header__cta {
         display: block;
         width: 100%;
         text-align: center;
@@ -19,7 +13,7 @@
 }
 
 html, body {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
     height: 100%;
 }
@@ -29,7 +23,6 @@ body {
     flex-direction: column;
     margin: 0;
     font-family: 'KonstFont', Arial, sans-serif;
-
 }
 
 * {
@@ -52,7 +45,6 @@ img {
     height: auto;
 
     border-radius: 20px;
-    margin-top: 10px;
 }
 
 a {
@@ -71,7 +63,7 @@ ul{
 
 .header {
     background-color: #000;
-    color: #fff
+    color: #fff;
 }
 
 .header__wrap {
@@ -91,44 +83,13 @@ ul{
 .header__logo {
     text-decoration: none;
     color: #fff;
-    font-family: 'KonstFont', sans-serif;
     font-size: 38px;
 }
 
-.header__menu-link {
-    font-family: 'KonstFont', sans-serif;
-    font-size: 24px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
+.header__nav {
     display: flex;
+    align-items: center;
     gap: 20px;
-    color: #fff;
-}
-
-.header__menu-wrap {
-    opacity: 0.7;
-    transition: opacity 0.2s ease;
-}
-
-.header__menu-wrap:hover {
-    opacity: 1;
-}
-
-.products__cta {
-    display: inline-block;
-    padding: 12px 20px;
-
-    background-color: #000;
-    color: #fff;
-
-    border-radius: 8px;
-    text-decoration: none;
-
-    font-weight: 500;
-    transition: 0.3s;
-
-    font-size: 24px;
 }
 
 .main {
@@ -140,38 +101,39 @@ ul{
     font-size:32px;
 }
 
-.main_item{
+.main__item{
     font-size: 24px;
 }
 
-
-.main__cta {
+.header__cta {
     display: inline-block;
     padding: 12px 20px;
 
     background-color: #000;
+    opacity: 0.7;
     color: #fff;
 
     border-radius: 8px;
-    text-decoration: none;
+    
 
     font-weight: 500;
-    transition: 0.3s;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
 
     font-size: 24px;
 }
 
-.main__cta:hover {
-    transform: translateY(-2px);
+.header__cta:hover {
+    transform: translateY(2px);
     box-shadow: 0 4px 12px #333;
+    opacity: 1;
 }
 
-.main__cta:active {
+.header__cta:active {
     transform: translateY(0);
     box-shadow: none;
 }
 
-.main__cta:focus {
+.header__cta:focus {
     outline: 2px solid #555;
     outline-offset: 2px;
 }
@@ -183,13 +145,11 @@ ul{
 
 .footer__content {
     display: flex;
-    flex-direction: column; 
     align-items: flex-start;
     gap: 10px;
 }
 
 .footer__title {
-    font-family: 'KonstFont', sans-serif;
     font-style: normal;
     font-size: 24px;
     margin: 0;
@@ -197,7 +157,6 @@ ul{
 }
 
 .footer__list {
-    font-family: 'KonstFont', sans-serif;
     font-size: 24px;
     list-style: none;
     padding: 0;
